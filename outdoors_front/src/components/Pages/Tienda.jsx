@@ -6,7 +6,7 @@ import axios from "axios";
 
 const Tienda = () => {
   const [productos, setProductos] = useState([]); //inicialmente es un arreglo vacío
-  const URL = VITE_URL;
+  const URL = 'https://viveoutdoors-back.onrender.com';
 
   const obtenerTienda = async () => {
     try {

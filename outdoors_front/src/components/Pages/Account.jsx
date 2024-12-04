@@ -104,9 +104,9 @@ setLoginFormData({ ...loginFormData, [name]: value }); };
       console.log("Usuario autenticado:", user); 
 
       // Redirección según el rol *******************************
-      if (user.rol === "Admin") {
+      if (user.rol === "admin") {
         navigate("/admin/datos-personales");
-      } else if (user.rol === "Cliente") {
+      } else if (user.rol === "cliente") {
         navigate("/user/datos-personales");
       } else {
         console.error("Rol desconocido");

@@ -192,7 +192,7 @@ const obtenerVentas = async () => {
 //-------------------------------------------------------------------------------------------
 // FUNCIÓN PARA OBTENER LOS PRODUCTOS EN LA TIENDA
 const obtenerTienda = async () => {
-  const consulta = `SELECT DISTINCT ON (p.id_producto)    p.id_producto,    p.nombre AS producto_nombre,    p.precio AS producto_precio,    img.url AS imagen_url,    cat.nombre AS categoria_nombre,    ps.estado AS sale FROM    productos p JOIN    productos_sale ps ON p.id_producto = ps.id_producto JOIN    productos_categorias pc ON p.id_producto = pc.id_producto JOIN    categorias cat ON pc.id_categoria = cat.id_categoria JOIN    publicaciones pub ON p.id_producto = pub.id_producto LEFT JOIN    (SELECT DISTINCT ON (id_producto) id_producto, url     FROM imagenes_productos     ORDER BY id_producto, id_imagen) img ON p.id_producto = img.id_producto WHERE    pub.estado = 'Activo' ORDER BY p.id_producto;`;
+  const consulta = `SELECT DISTINCT ON (p.id_producto)    p.id_producto,    p.nombre AS producto_nombre,    p.precio AS producto_precio,    img.url AS imagen_url,    cat.nombre AS categoria_nombre,    ps.estado AS sale FROM    productos p JOIN    productos_sale ps ON p.id_producto = ps.id_producto JOIN    productos_categorias pc ON p.id_producto = pc.id_producto JOIN    categorias cat ON pc.id_categoria = cat.id_categoria JOIN    publicaciones pub ON p.id_producto = pub.id_producto LEFT JOIN    (SELECT DISTINCT ON (id_producto) id_producto, url     FROM imagenes_productos     ORDER BY id_producto, id_imagen) img ON p.id_producto = img.id_producto WHERE    pub.estado = 'activo' ORDER BY p.id_producto;`;
 
   try {
     const resultados = await pool.query(consulta);

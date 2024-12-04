@@ -7,7 +7,7 @@ const MisVentas = () => {
 
   const obtenerVentas = useCallback(async () => {
     try {
-      const response = await axios.get("http://localhost:3000/ventas");
+      const response = await axios.get("https://viveoutdoors-back.onrender.com/ventas");
       setVentas(response.data.getVentas || []);
       console.log("Ventas obtenidas respuesta del axios:", response.data.getVentas);
     } catch (error) {

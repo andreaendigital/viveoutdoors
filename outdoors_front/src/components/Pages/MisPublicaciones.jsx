@@ -28,9 +28,9 @@ const MisPublicaciones = () => {
   const handleEstadoClick = async (id, nuevoEstado) => {
     try {
       const ruta =
-        nuevoEstado === "Activo"
-          ? `http://localhost:3000/publicacionactiva/${id}`
-          : `http://localhost:3000/publicacioninactiva/${id}`;
+        nuevoEstado === "activo"
+          ? `https://viveoutdoors-back.onrender.com/publicacionactiva/${id}`
+          : `hhttps://viveoutdoors-back.onrender.com/publicacioninactiva/${id}`;
       await axios.put(ruta);
       console.log(`Publicación ${id} se ha marcado como ${nuevoEstado}`); // Actualizar el estado de las publicaciones después de la modificación
       obtenerPublicaciones();
@@ -87,16 +87,16 @@ const MisPublicaciones = () => {
                         <Col>
                           <Button
                             variant={
-                              publicacion.estado === "Activo"
+                              publicacion.estado === "activo"
                                 ? "success"
                                 : "secondary"
                             }
                             className="me-2"
                             onClick={() =>
-                              publicacion.estado === "Inactivo" &&
+                              publicacion.estado === "inactivo" &&
                               handleEstadoClick(
                                 publicacion.id_publicacion,
-                                "Activo"
+                                "activo"
                               )
                             }
                           >
@@ -104,15 +104,15 @@ const MisPublicaciones = () => {
                           </Button>
                           <Button
                             variant={
-                              publicacion.estado === "Inactivo"
+                              publicacion.estado === "inactivo"
                                 ? "success"
                                 : "secondary"
                             }
                             onClick={() =>
-                              publicacion.estado === "Activo" &&
+                              publicacion.estado === "activo" &&
                               handleEstadoClick(
                                 publicacion.id_publicacion,
-                                "Inactivo"
+                                "inactivo"
                               )
                             }
                           >

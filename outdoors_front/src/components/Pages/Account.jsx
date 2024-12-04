@@ -50,7 +50,7 @@ setLoginFormData({ ...loginFormData, [name]: value }); };
   const handleSubmitRegister = async (e) => {
     e.preventDefault();
     try {
-      const respuesta = await axios.post("http://localhost:3000/registro", {
+      const respuesta = await axios.post("https://viveoutdoors-back.onrender.com/registro", {
         nombre: registerFormData.nombre, 
         apellido: registerFormData.apellido, 
         email: registerFormData.email, 
@@ -78,7 +78,7 @@ setLoginFormData({ ...loginFormData, [name]: value }); };
   const handleSubmitLogin = async (e) => {
     e.preventDefault();
     try {
-      const respuesta = await axios.post("http://localhost:3000/login", {
+      const respuesta = await axios.post("https://viveoutdoors-back.onrender.com/login", {
         email: loginFormData.email, 
         password: loginFormData.password,
       });

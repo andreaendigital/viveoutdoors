@@ -43,7 +43,7 @@ const DatosPersonales = () => {
   
       // const id_usuario = datos.id; // ID del usuario
       const response = await axios.put(
-        `http://localhost:3000/datospersonales`,
+        `https://viveoutdoors-back.onrender.com/datospersonales`,
         datos,
         config
       );
@@ -71,7 +71,7 @@ const DatosPersonales = () => {
           },
         };
 
-        const response = await axios.get("http://localhost:3000/datospersonales", config);
+        const response = await axios.get("https://viveoutdoors-back.onrender.com/datospersonales", config);
         setDatos(response.data); // Guardar los datos obtenidos en el estado
       } catch (err) {
         setError(err.message || "Error al obtener los datos personales");

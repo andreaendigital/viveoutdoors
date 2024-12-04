@@ -30,7 +30,7 @@ const MisPublicaciones = () => {
       const ruta =
         nuevoEstado === "activo"
           ? `https://viveoutdoors-back.onrender.com/publicacionactiva/${id}`
-          : `hhttps://viveoutdoors-back.onrender.com/publicacioninactiva/${id}`;
+          : `https://viveoutdoors-back.onrender.com/publicacioninactiva/${id}`;
       await axios.put(ruta);
       console.log(`Publicación ${id} se ha marcado como ${nuevoEstado}`); // Actualizar el estado de las publicaciones después de la modificación
       obtenerPublicaciones();

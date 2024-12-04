@@ -6,7 +6,7 @@ import axios from "axios";
 
 const Tienda = () => {
   const [productos, setProductos] = useState([]); //inicialmente es un arreglo vacío
-  const URL = import.meta.env.VITE_URL;
+  const URL = VITE_URL;
 
   const obtenerTienda = async () => {
     try {

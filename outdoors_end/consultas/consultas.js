@@ -122,7 +122,7 @@ const getProductosSale = async () => {
 const publicacionInactiva = async (id_publicacion) => {
   const consulta =
     "UPDATE publicaciones SET estado = $1, fecha_actualizacion = NOW() WHERE id_publicacion = $2 RETURNING *;";
-  const values = ["Inactivo", id_publicacion];
+  const values = ["inactivo", id_publicacion];
   const result = await pool.query(consulta, values);
   return result.rows[0]; // Retorna la publicación actualizada
 };
@@ -132,7 +132,7 @@ const publicacionInactiva = async (id_publicacion) => {
 const publicacionActiva = async (id_publicacion) => {
   const consulta =
     "UPDATE publicaciones SET estado = $1, fecha_actualizacion = NOW() WHERE id_publicacion = $2 RETURNING *;";
-  const values = ["Activo", id_publicacion];
+  const values = ["activo", id_publicacion];
   const result = await pool.query(consulta, values);
   return result.rows[0]; // Retorna la publicación actualizada
 };

@@ -6,10 +6,11 @@ import axios from "axios";
 
 const Tienda = () => {
   const [productos, setProductos] = useState([]); //inicialmente es un arreglo vacío
+  const URL = import.meta.env.VITE_URL;
 
   const obtenerTienda = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/tienda");
+      const response = await axios.get(URL+"/tienda");
       setProductos(response.data || []);
       console.log("Productos obtenidos para la tienda:", response.data);
     } catch (error) {

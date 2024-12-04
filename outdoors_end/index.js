@@ -73,7 +73,13 @@ require("dotenv").config(); // Cargamos las variables de entorno desde el archiv
 // const { PORT, SECRET_JWT_KEY } = process.env;
 
 // Middlewares
-app.use(cors()); // Permite que nuestra API sea accesible desde diferentes orígenes
+// CORS Permite que nuestra API sea accesible desde diferentes orígenes
+app.use(cors({
+    origin: 'https://viveoutdoors-uch3.onrender.com', // Cambia esto al dominio de tu frontend
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true,
+  }));
+
 app.use(morgan("dev")); // Registra las solicitudes en la consola para facilitar el desarrollo
 app.use(helmet());
 app.use(express.json()); // Permite que nuestra aplicación entienda el formato JSON en las solicitudes
@@ -332,8 +338,8 @@ app.get("/tienda", async (req, res) => {
     const tienda = await obtenerTienda();
     res.json(tienda);
   } catch (error) {
-    console.error("Error al obtener lista de ventas:", error);
-    res.status(500).json({ error: "Error al obtener ventas" });
+    console.error("Error al obtener lista de productos para tienda:", error);
+    res.status(500).json({ error: "Error al obtener vista tienda" });
   }
 });
 

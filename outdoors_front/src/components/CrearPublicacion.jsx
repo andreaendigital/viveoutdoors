@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Form, Button, Modal } from "react-bootstrap";
 import axios from "axios";
-
+console.log("antes del componente");
 const CrearPublicacion = () => {
   const [nombre, setNombre] = useState("");
   const [descripcion, setDescripcion] = useState("");
@@ -11,7 +11,7 @@ const CrearPublicacion = () => {
   const [texto_alternativo, setTextoalternativo] = useState("");
   const [categorias, setCategorias] = useState([]); // Estado para almacenar las categorías
   const [id_categoria, setIdCategoria] = useState(""); // Estado para la categoría seleccionada
-
+  console.log("dentro del componente");
   // Estados para el modal
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState("");

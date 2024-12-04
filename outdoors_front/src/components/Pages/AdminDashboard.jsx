@@ -7,6 +7,7 @@ import MisPublicaciones from "./MisPublicaciones.jsx";
 import DatosPersonales from "../DatosPersonales.jsx";
 import MisVentas from "./MisVentas.jsx";
 import CerrarSesion from "./CerrarSesion.jsx";
+import CrearPublicacion from "../CrearPublicacion.jsx";
 
 // Componentes para el contenido de cada página
 // const DatosPersonales = () => <h1>Datos Personales</h1>;
@@ -34,7 +35,7 @@ const AdminDashboard = () => {
             {/* <Route path="configurar-cuenta" element={<ConfigurarCuenta />} /> */}
             <Route path="mis-ventas" element={<MisVentas />} />
             <Route path="mis-publicaciones" element={<MisPublicaciones />} />
-            {/* <Route path="crearpublicacion" element={<CrearPublicacion />} /> */}
+            <Route path="crearpublicacion" element={<CrearPublicacion />} />
             <Route path="cerrar-sesion" element={<CerrarSesion />} />
           </Routes>
         </Col>

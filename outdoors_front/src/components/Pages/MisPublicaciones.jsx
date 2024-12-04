@@ -9,7 +9,7 @@ const MisPublicaciones = () => {
 
   const obtenerPublicaciones = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/publicaciones");
+      const response = await axios.get("https://viveoutdoors-back.onrender.com/publicaciones");
       setPublicaciones(response.data.obtenerPublicaciones || []);
       console.log(
         "Publicaciones obtenidas:",

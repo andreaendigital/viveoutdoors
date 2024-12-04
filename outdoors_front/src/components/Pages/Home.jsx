@@ -4,15 +4,17 @@
 // import FeaturedProducts from "../components/FeaturedProducts";
 // import BrandBanner from "../components/BrandBanner";
 import Carrusel from "../Home/Carrusel";
+import FeaturedProducts from "../Home/FeaturedProducts";
+import CategoryCards from "../Home/CategoryCards";
 
 const Home = () => {
   return (
     <div>
       {/* <h1>Bienvenido a nuestro Marketplace</h1> */}
       <Carrusel />
-      {/* <CategoryCards />
+      <CategoryCards />
       <FeaturedProducts />
-      <BrandBanner /> */}
+      {/* <BrandBanner /> */}
     </div>
   );
 };

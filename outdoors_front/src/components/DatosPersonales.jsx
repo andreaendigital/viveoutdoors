@@ -11,7 +11,7 @@ import {
 
 import axios from "axios";
 
-const DatosPersonales = () => {}
+const DatosPersonales = () => {
   const [datos, setDatos] = useState(null); // Estado para almacenar los datos del usuario
   const [error, setError] = useState(null); // Estado para manejar errores
   const [show, setShow] = useState(false);

@@ -10,7 +10,7 @@ A través de esta tienda virtual, los usuarios podrán explorar y adquirir produ
 
 ## Integrantes del Proyecto
 
-- **Andrés Velázquez**
+- **Andrés Velásquez**
 - **Andrea Rosero**
 - **Lorena Suárez**
 

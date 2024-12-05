@@ -4,7 +4,7 @@
 
 # Vive Outdoors
 
-Proyecto esta realizado como parte del desafío final de **Desarrollador Full stack Js** en **Desafío Latam**. 
+Este proyecto esta realizado como parte del desafío final de **Desarrollador Full stack Js** en **Desafío Latam**. 
 A través de esta tienda virtual, los usuarios podrán explorar y adquirir productos relacionados con actividades al aire libre, como carpas, sacos y colchones, mochilas y accesorios.
 
 
@@ -18,47 +18,64 @@ A través de esta tienda virtual, los usuarios podrán explorar y adquirir produ
 
 https://viveoutdoors-uch3.onrender.com/
 
+
 Para acceder a vista admin utilizar las credenciales:
 
-email: admin1@example.com
-contraseña: password123
+- email: admin1@example.com
+- contraseña: password123
+
 
 Para acceder a vista cliente utilizar las credenciales: 
 
-email: cliente1@example.com
-contraseña: clave123
+- email: cliente1@example.com
+- contraseña: clave123
 
 
 ## Hito Final:
 
 En este repositorio se juntan lo desarrollado en back y front en los hitos anteriores y se adecua para ser deployado a través de render.com
 
-## Imágenes del Desarrollo logrado
+
+## Imágenes del Desarrollo logrado:
 
 Se logró realizar el deploy de todas las partes: 
+
+
 ![Captura de pantalla 2024-12-04 224040](https://github.com/user-attachments/assets/17434df9-dfdc-4470-a799-e4e0b9d46a4e)
 
 
-Vista del Home: 
+Vista del Cliente:
 
-![Captura de pantalla 2024-11-10 215734](https://github.com/user-attachments/assets/7cf170e3-54b3-4eb7-8d85-3aae4277d740)
-
-
-Vista de /account donde se muestran ambos formularios: 
-
-![Captura de pantalla 2024-11-10 215708](https://github.com/user-attachments/assets/1bd25242-905b-40af-b09f-806d32abcdce)
+![Captura de pantalla 2024-12-04 225347](https://github.com/user-attachments/assets/a1fb0aba-0486-4788-84c6-b2be0f601330)
 
 
-Al ingresar datos en formulario login, redirecciona a dashboard:
+Vista del Administrador / Edición de datos personales para cliente y administrador:
 
-![Captura de pantalla 2024-11-10 211751](https://github.com/user-attachments/assets/8ecb05c6-d24a-41ee-a1ef-f5401cfaab86)
+![Captura de pantalla 2024-12-04 225250](https://github.com/user-attachments/assets/ea620763-bcab-47a7-b959-556e934f5dcf)
 
 
-Vistas (incompletas) de los dashboards de "cliente" y "admin": 
+Vista de las Ventas: 
 
-![Captura de pantalla 2024-11-10 215748](https://github.com/user-attachments/assets/cdcf248a-a8d4-4192-bc58-4aedba513301)
+![Captura de pantalla 2024-12-04 225158](https://github.com/user-attachments/assets/d80c7d3c-b6c8-44f2-ac72-2e56507abdaa)
 
-![Captura de pantalla 2024-11-10 215756](https://github.com/user-attachments/assets/745d55b5-f1df-4be3-9233-8e15b2068d88)
+
+Vista de los productos activos e inactivos publicados: 
+
+![Captura de pantalla 2024-12-04 225223](https://github.com/user-attachments/assets/cb3b377f-36f8-4905-94b8-154ea0fbf592)
+
+
+Opción del administrador de crear nuevas publicaciones (publicar productos):
+
+![Captura de pantalla 2024-12-04 225232](https://github.com/user-attachments/assets/2d1f712b-b98a-4398-98d4-0a52c89712c0)
+
+
+Vista de la tienda: 
+
+![Captura de pantalla 2024-12-04 225736](https://github.com/user-attachments/assets/ab63aba4-d160-4771-b2c5-a30f909e3170)
+
+Carrito de Compras: 
+
+![Captura de pantalla 2024-12-04 225308](https://github.com/user-attachments/assets/d7b5100a-64a7-46f8-8603-3fbddae3ea29)
 
 
 ## Contacto
